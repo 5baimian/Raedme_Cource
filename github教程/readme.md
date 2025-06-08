@@ -33,4 +33,18 @@ git branch//查看分支情况，带*的为主分支
 ```
 #### 现象：
 ![2.1、上传本地文件](.//pictures/2.1.png)
+### 2.2、更改SSH协议
+#### 现象：使用git push 上传时会报网络错误
+![上传出错](.//pictures/2.2.1.png)
+#### HTTPS 推送可能会被网络限制，而 SSH 更稳定
+```
+#步骤
+​​1、生成 SSH 密钥​
+ssh-keygen -t ed25519 -C "your_email@example.com"
+2、添加 SSH 公钥到 GitHub​
+cat ~/.ssh/id_ed25519.pub
+3、修改远程仓库 URL 为 SSH​
+git remote set-url origin git@github.com:5baimian/Raedme_Cource.git
+4、重新推送​
+git push origin master
 
