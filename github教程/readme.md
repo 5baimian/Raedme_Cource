@@ -11,16 +11,30 @@
 #指令
 git init
 git clone +仓库HTTPS/SSH网址
+
+#HTTPS和SSH的区别：
+使用URL可以直接进行克隆
+使用SSH协议进行克隆时，要生成SSH密钥，参照2.1
 ```
 #### 现象:
 ![1.1、拉取整个仓库](.//pictures/1.1.png)
 ### 1.2、更新本地仓库
 ```
 git pull 
+
 ```
+### 1.3、拉取仓库特定分支文件
+#### 现象：在克隆本地时，只会克隆默认分支，不会克隆其他分支，需要指定分支进行克隆
+```
+git clone -b 分支名 +仓库HTTPS/SSH网址
 
+git clone -b master git@github.com:5baimian/Raedme_Cource.git
 
+推荐：
+git clone -b 分支名 --single-branch +仓库HTTPS/SSH网址
 
+```
+#### ![克隆指定分支](.//pictures/1.3.png)
 
 
 ## 2、上传本地文件到仓库
