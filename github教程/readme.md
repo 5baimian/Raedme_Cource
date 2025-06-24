@@ -116,3 +116,29 @@ git push origin master
 
 ```
 
+### 3、删除文件
+#### 上传时会因为不小心上传其余文件，想要删除掉
+```
+# 具体操作
+  1、将github上文件拉取到本地
+  git pull
+  2、将不想要的文件在本地删除掉
+  3、将更改添加到Git暂存区
+     包括：新增的文件（untracked）
+
+           修改过的文件（modified）
+
+	    删除的文件（deleted）
+    git add -A
+
+       这是最全面的添加方式，等同于把当前工作区的所有改动都准备好提交。
+    4、提交备注
+    git commit -m "清理无用文件夹"
+    5、推送
+    git push origin +特定分支
+    6、查看暂存区状态
+    git status
+
+  
+```
+
