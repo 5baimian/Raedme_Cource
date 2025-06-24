@@ -1,0 +1,45 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+
+         // task1: Calculator: single_cpp, G++
+        {   "label": "HelloworldSingleCppG++Compile",
+            "options": {
+                "cwd": "${workspaceFolder}/single_cpp"
+            },
+            "type": "shell",
+            "command": "mkdir build; g++ hello_world.cpp -g -o build/hello_world",
+            "group": "build"
+        },
+        // task2: Calculator: single_cpp, CMake
+        {
+            "label": "HelloworldSingleCppCMakeCompile",
+            "options": {
+                "cwd": "${workspaceFolder}/single_cpp"
+            },
+            "type": "shell",
+            "command": "mkdir build; cd build; cmake -G 'MinGW Makefiles' ..; mingw32-make",
+            "group": "build"
+        },
+           // task3: Calculator: Multi cpp, G++
+        {
+            "label": "CalculatorMultiCppG++Compile",
+            "options": {
+                "cwd": "${workspaceFolder}/multi_cpp"
+            },
+            "type": "shell",
+            "command": "mkdir build; g++ main.cpp src/Calculator.cpp -g -o build/calculator",
+            "group": "build"
+        },
+        // task4: Calculator: Multi cpp, CMake
+        {
+            "label": "CalculatorMultiCppCMakeCompile",
+            "options": {
+                "cwd": "${workspaceFolder}/multi_cpp"
+            },
+            "type": "shell",
+            "command": "mkdir build; cd build; cmake -G 'MinGW Makefiles' ..; mingw32-make",
+            "group": "build"
+        }
+    ]
+}

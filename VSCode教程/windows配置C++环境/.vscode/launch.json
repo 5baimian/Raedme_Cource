@@ -1,0 +1,93 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // Launch1: HelloWorld: "preLaunchTask": "HelloSingleCppG++Compile"
+        {
+            "name": "HelloworldG++Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/single_cpp/build/hello_world.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "HelloworldSingleCppG++Compile"
+        },
+        // Launch2: HelloWorld: "preLaunchTask": "HelloSingleCppCMakeCompile"
+        {
+            "name": "HelloworldCMakeLaunch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/single_cpp/build/hello_world.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "HelloworldSingleCppCMakeCompile"
+        },
+        // Launch3: Calculator: "preLaunchTask": "CalculatorMultiCppG++Compile"
+        {
+            "name": "CalculatorG++Launch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/multi_cpp/build/calculator.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "CalculatorMultiCppG++Compile"
+        },
+        // Launch4: Calculator: "preLaunchTask": "CalculatorMultiCppCMakeCompile"
+        {
+            "name": "CalculatorCMakeLaunch",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/multi_cpp/build/calculator.exe",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb",
+            "setupCommands": [
+                {
+                    "description": "Enable pretty-printing for gdb",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "preLaunchTask": "CalculatorMultiCppCMakeCompile"
+        }
+    ]
+}
