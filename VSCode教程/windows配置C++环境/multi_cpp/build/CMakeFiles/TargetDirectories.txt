@@ -1,0 +1,3 @@
+D:/Desktop/code/multi_cpp/build/CMakeFiles/calculator.dir
+D:/Desktop/code/multi_cpp/build/CMakeFiles/edit_cache.dir
+D:/Desktop/code/multi_cpp/build/CMakeFiles/rebuild_cache.dir

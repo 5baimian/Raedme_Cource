@@ -1,0 +1,54 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+
+         // task1: Calculator: single_cpp, G++
+        {   
+            //​​任务名称​​，必须与 launch.json 中的 preLaunchTask 完全一致（区分大小写）
+            "label": "HelloworldSingleCppG++Compile",   // 与 preLaunchTask 对应
+
+            //​​任务选项​​，指定任务执行的工作目录
+            "options": {
+                "cwd": "${workspaceFolder}/single_cpp"
+            },
+
+            //​任务类型​​，表示在系统终端中执行命令（如 Bash、CMD）
+            "type": "shell",
+            //​​执行的命令​​，这里创建 build 目录并编译 hello_world.cpp
+            "command": "mkdir build; g++ hello_world.cpp -g -o build/hello_world",
+
+            //任务分组​​，设为 "build" 后可通过快捷键 Ctrl+Shift+B 直接触发。
+            "group": "build"
+        },
+        // task2: Calculator: single_cpp, CMake
+        {
+            "label": "HelloworldSingleCppCMakeCompile",
+            "options": {
+                "cwd": "${workspaceFolder}/single_cpp"
+            },
+            "type": "shell",
+            "command": "mkdir build; cd build; cmake -G 'MinGW Makefiles' ..; mingw32-make",
+            "group": "build"
+        },
+           // task3: Calculator: Multi cpp, G++
+        {
+            "label": "CalculatorMultiCppG++Compile",
+            "options": {
+                "cwd": "${workspaceFolder}/multi_cpp"
+            },
+            "type": "shell",
+            "command": "mkdir build; g++ main.cpp src/Calculator.cpp -g -o build/calculator",
+            "group": "build"
+        },
+        // task4: Calculator: Multi cpp, CMake
+        {
+            "label": "CalculatorMultiCppCMakeCompile",
+            "options": {
+                "cwd": "${workspaceFolder}/multi_cpp"
+            },
+            "type": "shell",
+            "command": "mkdir build; cd build; cmake -G 'MinGW Makefiles' ..; mingw32-make",
+            "group": "build"
+        }
+    ]
+}
