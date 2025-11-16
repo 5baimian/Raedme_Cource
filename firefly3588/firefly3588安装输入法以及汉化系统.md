@@ -20,7 +20,7 @@ echo $LANG
 ```bash
 #安装IBus和拼音输入法引擎
 sudo apt update
-sudo apt install ibus-pingyin
+sudo apt install ibus-pinyin
 # 启用IBus输入法框架
 ibus-daemon -drx
 
