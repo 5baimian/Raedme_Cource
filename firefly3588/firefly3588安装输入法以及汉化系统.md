@@ -34,5 +34,7 @@ ibus-daemon -drx
  ```bash
 sudo passwd firefly
 
+#设置东八区时间
+sudo timedatectl set-timezone Asia/Shanghai
 
 ```
