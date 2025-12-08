@@ -10,6 +10,8 @@
 //https://xn--mes358acgm99l.com/#/dashboard //在网址栏搜索 极速机场
 //可用URL:https://jsjc.cfd/api/v1/client/subscribe?token=a7b351ffc2400ed445303dd43f068335
 
+//https://jsjc.cfd/api/v1/client/subscribe?token=d5ac1b331e5912f0fa87f9b8239ca536  --极速机场2
+
 //一元机场: https://xn--1-q07a56pdss.com/#/dashboard
 //可用URL:https://s1.byte77.com/api/v1/client/subscribe?token=56d8e00a0c62d0b7f25ad594ccfc667e
 
