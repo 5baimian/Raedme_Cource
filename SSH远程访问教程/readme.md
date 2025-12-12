@@ -52,3 +52,6 @@ ssh-keygen -f "/home/orangepi/.ssh/known_hosts" -R "192.168.10.51"
 scp -r GUI_ROS2_12_7/ Xiaolong@192.168.10.51:D:/software_data/MobaXterm/Workspace
 
 ```
+
+错误分析1：
+添加环境变量： 系统变量-> path->添加C:\Windows\System32\OpenSSH\
