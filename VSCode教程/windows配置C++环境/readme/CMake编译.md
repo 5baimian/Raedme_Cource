@@ -72,3 +72,17 @@ mingw32-make
 ./hello_world.exe
 
 ```
+
+### 将编译命令与linux同步
+```bash
+# 把命令mingw32-make 替换成make
+找到mingw32-make.exe,将其复制一份，切记是复制一份，将复制的文件名称改为make.exe,此时这里应该有两个exe文件，mingw32-make.exe \make.exe。
+
+
+# 把cmake -G "MinGW Makefiles" .. 变成cmake ..
+
+设置系统环境变量，新建 变量名：CMAKE_GENERATOR 变量值： MinGW Makefiles  ,保存设置，重启终端就可以了。
+
+
+
+```
